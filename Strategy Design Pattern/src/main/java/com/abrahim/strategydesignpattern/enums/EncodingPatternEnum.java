@@ -1,4 +1,4 @@
-package com.abrahim.strategydesignpattern.service;
+package com.abrahim.strategydesignpattern.enums;
 
 public enum EncodingPatternEnum {
 
