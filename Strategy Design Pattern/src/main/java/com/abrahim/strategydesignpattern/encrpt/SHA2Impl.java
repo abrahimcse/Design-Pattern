@@ -4,7 +4,7 @@ import com.abrahim.strategydesignpattern.enums.EncodingPatternEnum;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SHA2Impl implements Encryption{
+public class SHA2Impl implements Encryption {
 
   @Override
   public void encrypt(String toBeEncryption) {

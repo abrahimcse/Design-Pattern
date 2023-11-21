@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 public class EncryptionController {
-    private final EncryptionFactory factory;
 
-    @GetMapping("/encrypt")
-    public void encryptWithEncode(EncodingPatternEnum encodingPatternEnum){
-      factory.findEncryptionType(encodingPatternEnum).encrypt("Code decode");
-    }
+  private final EncryptionFactory factory;
+
+  @GetMapping("/encrypt")
+  public void encryptWithEncode(EncodingPatternEnum encodingPatternEnum) {
+    factory.findEncryptionType(encodingPatternEnum).encrypt("Code decode");
+  }
 
 }

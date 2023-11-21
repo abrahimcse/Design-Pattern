@@ -14,16 +14,16 @@ public class EncryptionFactory {
   Map<EncodingPatternEnum, Encryption> map;
 
   @Autowired
-  public EncryptionFactory(Set<Encryption> encryptionSet){
+  public EncryptionFactory(Set<Encryption> encryptionSet) {
     createStrategy(encryptionSet);
   }
 
   private void createStrategy(Set<Encryption> encryptionSet) {
-    map=new HashMap<EncodingPatternEnum, Encryption>();
-    encryptionSet.stream().forEach(e-> map.put(e.getEncryptionType(),e));
+    map = new HashMap<EncodingPatternEnum, Encryption>();
+    encryptionSet.stream().forEach(e -> map.put(e.getEncryptionType(), e));
   }
 
-  public Encryption findEncryptionType(EncodingPatternEnum encodingPatternEnum){
+  public Encryption findEncryptionType(EncodingPatternEnum encodingPatternEnum) {
     return map.get(encodingPatternEnum);
   }
 }
