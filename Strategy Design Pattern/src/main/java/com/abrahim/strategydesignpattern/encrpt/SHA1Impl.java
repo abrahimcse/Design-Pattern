@@ -1,7 +1,9 @@
 package com.abrahim.strategydesignpattern.encrpt;
 
 import com.abrahim.strategydesignpattern.enums.EncodingPatternEnum;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SHA1Impl implements Encryption{
 
   @Override
